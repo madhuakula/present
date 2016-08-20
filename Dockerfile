@@ -3,10 +3,12 @@
 # docker run -v `pwd`:/slides -p 1948:1948 -d madhuakula/present
 #
 
+# Using node slim (alpine image for node)
 FROM node:slim
 
 MAINTAINER Madhu Akula <madhu.akula@hotmail.com>
 
+# creating the slides directory to mount 
 RUN mkdir -p /slides
 
 # installing reveal-md package
@@ -18,6 +20,7 @@ WORKDIR /slides
 # reveal-md default port for presentation 
 EXPOSE 1948
 
+# reveal-md local path to give as entrypoint
 ENTRYPOINT ["/usr/local/bin/reveal-md"]
 
 CMD [ "--help" ]
