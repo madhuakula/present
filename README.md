@@ -2,6 +2,11 @@
 Reveal JS presentation with reveal-md using Docker
 ---
 
+### More details about the `reveal.js` and `reveal-md`
+
+- [reveal.js](https://github.com/hakimel/reveal.js)
+- [reveal-md](https://github.com/webpro/reveal-md)
+
 ### Docker pull (or) Docker build
 
 - Directly use by `docker pull` from the dockerhub
