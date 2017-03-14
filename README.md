@@ -27,5 +27,5 @@ docker build -t present .
 
 - Go to the directory where you want to present (where Markdown files are there). Then run the below command
 ```
-docker run -v `pwd`:/slides -p 1948:1948 -d madhuakula/present
+docker run -v `pwd`:/slides -p 1948:1948 -d madhuakula/present /slides
 ```
